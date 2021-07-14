@@ -1,0 +1,170 @@
+body {
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.titulo {
+    align-items: center;
+    display: flex;
+    background-color: #d9d9d9;
+    font-size: 30px;
+    height: 14vh;
+}
+
+.titulo h1 {
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.organizando-botoes {
+    display: flex;
+    justify-content: center;
+
+}
+
+.espaco-botoes {
+    justify-content: center;
+    margin-top: 3em;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes-de-medida {
+    font-size: 22px;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    width: 250px;
+    height: 60px;
+    box-shadow: 0px 0px 4px -2px #222222;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.botao-atual {
+    box-shadow: 0px 0px 4px 0px #00C2FF;
+}
+
+.botoes-de-medida:hover {
+    box-shadow: 0px 0px 4px 0px #0051ff;
+}
+
+
+.espaco-conversor {
+    display: none;
+    justify-content: center;    
+    transition: all ease .2s;
+}
+
+.modelos {
+    display: none;
+}
+
+.area-de-conversao {
+    margin-top: 50px;
+    background-color: #e8e8e8;
+    width: 87vw;
+    height: 55vh;
+    border-radius: 20px;
+    box-shadow: 0 0 10px -5px black;
+
+}
+
+.area-botao-indicador {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border-radius: 9px;
+    background-color: #d9d9d9;
+    font-family: 'montserrat';
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.indicador {
+    font-family: 'montserrat';
+    padding: 10px 12px;
+    margin-right: 20px;
+    font-size: 22px;
+    opacity: 0.5;
+}
+
+.lado-a-lado {
+    display: flex;
+    justify-content: space-around;
+}
+
+.organizacao-conversao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 170px;
+    margin-top: 50px;
+}
+
+.indicador-coversao {
+    font-family: 'montserrat';
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.elementos-conversao {
+    display: flex;
+    background-color: #d9d9d9;
+    font-size: 18px;
+    width: 240px;
+    height: 34px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+.selecionador-medida {
+    display: flex;
+    font-size: 18px;
+    background-color: #d9d9d9;
+    width: 245px;
+    height: 36px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+.opcoes {
+    text-align: center;
+    font-family: 'montserrat';
+}
+
+.imput-a-converter {
+    margin-bottom: 20px;
+}
+
+.imput-convertido {
+    margin-bottom: 20px;
+}
+
+main {
+    background-image: url("img/rodape.svg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 86vh;
+}

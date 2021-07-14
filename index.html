@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Document</title>
+    <title>Conversor de medidas</title>
 </head>
 <body>
 
+    <header>
+        <div class="titulo"><h1>Conversor de medidas</h1></div>
+    </header>
+
+
+    <main>
+
+        <div class="organizando-botoes">
+            <div class="espaco-botoes">
+                <div class="botoes-de-medida comprimento">Comprimento</div>
+                <div class="botoes-de-medida area">Área</div>
+                <div class="botoes-de-medida volume">Volume</div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="modelos">
+        <div class="espaco-conversor">
+            <div class="area-de-conversao">
+
+                <div class="area-botao-indicador">
+                    <div class="botao-voltar">
+                        X
+                    </div>
+                    <div class="indicador">
+                        Conversao atual
+                    </div>
+                </div>
+    
+                <div class="lado-a-lado">
+                    <div class="a-converter organizacao-conversao">
+                        
+                        <div class="indicador-coversao">Valor a ser convertido</div>
+                        <input type="text" placeholder="entrada" class="imput-a-converter elementos-conversao" onkeypress="return event.charCode >= 46 && event.charCode <= 57 && event.charCode !== 47"></input>
+                        <select class="selecionador-medida entrada">
+
+                        </select>
+    
+                    </div>
+                    <div class="convertido organizacao-conversao">
+    
+                        <div class="indicador-coversao">Valor convertido</div>
+                        <input type="text" placeholder="resultado" class="imput-convertido elementos-conversao"></input>
+                        <select class="selecionador-medida saida">
+                            
+                        </select>
+
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
