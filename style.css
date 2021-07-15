@@ -1,54 +1,63 @@
 body {
     background-color: #f2f2f2;
     overflow: hidden;
+}
+
+main {
     background-image: url("img/rodape.svg");
-    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 86vh;
 }
 
+.modelos {
+    display: none;
+}
+/* Espaco reservado para organizacao do titulo */
+
 .titulo {
     align-items: center;
-    display: flex;
     background-color: #d9d9d9;
     font-size: 30px;
+    display: flex;
     height: 14vh;
 }
 
 .titulo h1 {
-    padding-left: 50px;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
 }
 
-
+/* Espaco reservado para organizacao dos botoes */
 
 .organizando-botoes {
     display: flex;
     justify-content: center;
+
 }
 
 .espaco-botoes {
+    display: flex;
+    justify-content: space-between;
     justify-content: center;
     margin-top: 3em;
     width: 90vw;
-    display: flex;
-    justify-content: space-between;
 }
 
 .botoes-de-medida {
-    font-size: 22px;
-    border-radius: 7px;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #e8e8e8;
-    width: 250px;
-    height: 60px;
+    border-radius: 7px;
     box-shadow: 0px 0px 4px -2px #222222;
     cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    height: 60px;
+    justify-content: center;
     transition: 200ms;
+    width: 250px;
 }
 
 .botao-atual {
@@ -59,6 +68,7 @@ body {
     box-shadow: 0px 0px 4px 0px #0051ff;
 }
 
+/* Espaco reservado para o conversor */
 
 .espaco-conversor {
     display: none;
@@ -66,47 +76,47 @@ body {
     transition: all ease .2s;
 }
 
-.modelos {
-    display: none;
-}
-
 .area-de-conversao {
-    margin-top: 50px;
     background-color: #e8e8e8;
-    width: 87vw;
-    height: 55vh;
     border-radius: 20px;
     box-shadow: 0 0 10px -5px black;
+    height: 55vh;
+    margin-top: 50px;
+    width: 87vw;
 }
 
+/* Espaco reservado para a parte superior do conversor */
+
 .area-botao-indicador {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .botao-voltar {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 10px 14px;
-    border-radius: 9px;
     background-color: #d9d9d9;
+    border-radius: 9px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
     font-family: 'montserrat';
-    font-weight: bold;
-    margin-left: 20px;
     font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 20px;
+    padding: 10px 14px;
 }
 
 .indicador {
     font-family: 'montserrat';
-    padding: 10px 12px;
-    margin-right: 20px;
     font-size: 22px;
+    margin-right: 20px;
     opacity: 0.5;
+    padding: 10px 12px;
 }
+
+/* Espaco reservado para a parte principal do conversor */
 
 .lado-a-lado {
     display: flex;
@@ -116,44 +126,44 @@ body {
 .organizacao-conversao {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     height: 170px;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
 .indicador-coversao {
     font-family: 'montserrat';
     font-size: 18px;
-    text-align: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .elementos-conversao {
-    display: flex;
     background-color: #d9d9d9;
-    font-size: 18px;
-    width: 240px;
-    height: 34px;
-    border-radius: 10px;
-    text-align: center;
     border: none;
+    border-radius: 10px;
+    display: flex;
+    font-size: 18px;
+    height: 34px;
+    text-align: center;
+    width: 240px;
 }
 
 .selecionador-medida {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 10px;
     display: flex;
     font-size: 18px;
-    background-color: #d9d9d9;
-    width: 245px;
     height: 36px;
     padding: 0px 0px 0px 10px;
-    border-radius: 10px;
     text-align: center;
-    border: none;
+    width: 245px;
 }
 
 .opcoes {
-    text-align: center;
     font-family: 'montserrat';
+    text-align: center;
 }
 
 .imput-a-converter {
@@ -164,35 +174,37 @@ body {
     margin-bottom: 20px;
 }
 
+/* Espaco reservado para responsividade */
+
 @media (max-width:1000px) {
-    body {
+    main {
         background-color: #f2f2f2;
-        overflow: auto;
         background-image: none;
+        overflow: auto;
     }
     .titulo {
         font-size: 30px;
         height: 14vh;
     }
     .espaco-botoes {
-        flex-direction: column;
         align-items: center;
-
+        flex-direction: column;
     }
     .botoes-de-medida {
         margin-bottom: 7px;
+        width: 80vw;
     }
     .espaco-conversor {
         padding-bottom: 80px;
     }
     .area-de-conversao {
-        margin-top: 50px;
         background-color: #e8e8e8;
-        width: 87vw;
-        height: auto;
         border-radius: 20px;
         box-shadow: 0 0 10px -5px black;
+        height: auto;
         margin-bottom: 2em;
+        margin-top: 50px;
+        width: 87vw;
     }
     .lado-a-lado{
         flex-direction: column;
@@ -203,10 +215,10 @@ body {
 }
 
 @media (max-width:840px) {
-    body {
+    main {
         background-color: #f2f2f2;
-        overflow: auto;
         background-image: none;
+        overflow: auto;
     }
     .titulo {
         font-size: 22px;
@@ -217,15 +229,16 @@ body {
     }
     .botoes-de-medida {
         margin-bottom: 7px;
+        width: 80vw;
     }
     .area-de-conversao {
-        margin-top: 50px;
         background-color: #e8e8e8;
-        width: 87vw;
-        height: auto;
         border-radius: 20px;
         box-shadow: 0 0 10px -5px black;
+        height: auto;
+        margin-top: 50px;
         margin-bottom: 2em;
+        width: 87vw;
     }
     .lado-a-lado{
         flex-direction: column;
