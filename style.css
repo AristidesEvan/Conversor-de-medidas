@@ -40,7 +40,6 @@ main {
 .espaco-botoes {
     display: flex;
     justify-content: space-between;
-    justify-content: center;
     margin-top: 3em;
     width: 90vw;
 }
