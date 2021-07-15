@@ -1,6 +1,11 @@
 body {
     background-color: #f2f2f2;
     overflow: hidden;
+    background-image: url("img/rodape.svg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 86vh;
 }
 
 .titulo {
@@ -21,7 +26,6 @@ body {
 .organizando-botoes {
     display: flex;
     justify-content: center;
-
 }
 
 .espaco-botoes {
@@ -73,7 +77,6 @@ body {
     height: 55vh;
     border-radius: 20px;
     box-shadow: 0 0 10px -5px black;
-
 }
 
 .area-botao-indicador {
@@ -161,10 +164,76 @@ body {
     margin-bottom: 20px;
 }
 
-main {
-    background-image: url("img/rodape.svg");
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 86vh;
+@media (max-width:1000px) {
+    body {
+        background-color: #f2f2f2;
+        overflow: auto;
+        background-image: none;
+    }
+    .titulo {
+        font-size: 30px;
+        height: 14vh;
+    }
+    .espaco-botoes {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .botoes-de-medida {
+        margin-bottom: 7px;
+    }
+    .espaco-conversor {
+        padding-bottom: 80px;
+    }
+    .area-de-conversao {
+        margin-top: 50px;
+        background-color: #e8e8e8;
+        width: 87vw;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 0 10px -5px black;
+        margin-bottom: 2em;
+    }
+    .lado-a-lado{
+        flex-direction: column;
+    }
+    .organizacao-conversao {
+        align-items: center;
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        background-color: #f2f2f2;
+        overflow: auto;
+        background-image: none;
+    }
+    .titulo {
+        font-size: 22px;
+        height: 14vh;
+    }
+    .espaco-botoes {
+        flex-direction: column;
+    }
+    .botoes-de-medida {
+        margin-bottom: 7px;
+    }
+    .area-de-conversao {
+        margin-top: 50px;
+        background-color: #e8e8e8;
+        width: 87vw;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 0 10px -5px black;
+        margin-bottom: 2em;
+    }
+    .lado-a-lado{
+        flex-direction: column;
+    }
+    .organizacao-conversao {
+        align-items: center;
+    }
+    .convertido {
+        margin-bottom: 50px;
+    }
 }
