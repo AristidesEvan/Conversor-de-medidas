@@ -8,4 +8,4 @@ O projeto foi projetado para ser um conversor de medidas dinâmico (Atualizar os
 
 Para testar o código basta baixar o arquivo zip, abrir no vscode ou em outro editor de código-fonte e abri-lo com o live-server.
 
-Primeira versao disponível en tags.
+Primeira versao disponível em tags.
